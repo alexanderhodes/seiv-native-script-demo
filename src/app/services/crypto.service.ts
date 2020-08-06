@@ -1,10 +1,11 @@
+import {ENCODING, ENCRYPTION, HASH_FUNCTION} from "~/app/config/config";
 
 export class CryptoService {
 
     public static generateKey(password: java.lang.String): native.Array<number> {
-        const keyStart = password.getBytes("UTF-8");
-        const keyGenerator = javax.crypto.KeyGenerator.getInstance("AES");
-        const secureRandom = java.security.SecureRandom.getInstance("SHA1PRNG");
+        const keyStart = password.getBytes(ENCODING);
+        const keyGenerator = javax.crypto.KeyGenerator.getInstance(ENCRYPTION);
+        const secureRandom = java.security.SecureRandom.getInstance(HASH_FUNCTION);
         secureRandom.setSeed(keyStart);
         keyGenerator.init(128, secureRandom);
         const secretKey = keyGenerator.generateKey();
@@ -12,15 +13,15 @@ export class CryptoService {
     }
 
     public static encodeFile(key: native.Array<number>, fileData: native.Array<number>) {
-        const secretKeySpec = new javax.crypto.spec.SecretKeySpec(key, "AES");
-        const cipher = javax.crypto.Cipher.getInstance("AES");
+        const secretKeySpec = new javax.crypto.spec.SecretKeySpec(key, ENCRYPTION);
+        const cipher = javax.crypto.Cipher.getInstance(ENCRYPTION);
         cipher.init(javax.crypto.Cipher.ENCRYPT_MODE, secretKeySpec);
         return cipher.doFinal(fileData);
     }
 
     public static decodeFile(key: native.Array<number>, fileData: native.Array<number>) {
-        const secretKeySpec = new javax.crypto.spec.SecretKeySpec(key, "AES");
-        const cipher = javax.crypto.Cipher.getInstance("AES");
+        const secretKeySpec = new javax.crypto.spec.SecretKeySpec(key, ENCRYPTION);
+        const cipher = javax.crypto.Cipher.getInstance(ENCRYPTION);
         cipher.init(javax.crypto.Cipher.DECRYPT_MODE, secretKeySpec);
         return cipher.doFinal(fileData);
     }
