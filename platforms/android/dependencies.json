@@ -1,0 +1,42 @@
+[
+    {
+        "name": "@nativescript/theme",
+        "directory": "..\\..\\node_modules\\@nativescript\\theme"
+    },
+    {
+        "name": "nativescript-angular",
+        "directory": "..\\..\\node_modules\\nativescript-angular"
+    },
+    {
+        "name": "nativescript-secure-storage",
+        "directory": "..\\..\\node_modules\\nativescript-secure-storage"
+    },
+    {
+        "name": "nativescript-sqlite",
+        "directory": "..\\..\\node_modules\\nativescript-sqlite"
+    },
+    {
+        "name": "nativescript-toasty",
+        "directory": "..\\..\\node_modules\\nativescript-toasty"
+    },
+    {
+        "name": "tns-core-modules",
+        "directory": "..\\..\\node_modules\\tns-core-modules"
+    },
+    {
+        "name": "@nativescript/angular",
+        "directory": "..\\..\\node_modules\\@nativescript\\angular"
+    },
+    {
+        "name": "@nativescript/core",
+        "directory": "..\\..\\node_modules\\@nativescript\\core"
+    },
+    {
+        "name": "nativescript-intl",
+        "directory": "..\\..\\node_modules\\nativescript-intl"
+    },
+    {
+        "name": "tns-core-modules-widgets",
+        "directory": "..\\..\\node_modules\\tns-core-modules-widgets"
+    }
+]

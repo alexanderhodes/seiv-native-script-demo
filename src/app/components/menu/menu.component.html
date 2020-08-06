@@ -1,0 +1,6 @@
+<StackLayout marginLeft="8" marginRight="8">
+    <ns-header [open]="true" [title]="title" [target]="target"></ns-header>
+    <TextField [(ngModel)]="name" hint="Name" returnKeyType="done"></TextField>
+    <Button text="save name" (tap)="saveName()"></Button>
+    <Button text="delete ToDos" (tap)="deleteToDos()"></Button>
+</StackLayout>

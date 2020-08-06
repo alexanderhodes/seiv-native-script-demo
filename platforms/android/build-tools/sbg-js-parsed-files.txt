@@ -1,0 +1,4 @@
+C:\projekte\seiv\native-script-demo\platforms\android\app\src\main\assets\app\bundle.js
+C:\projekte\seiv\native-script-demo\platforms\android\app\src\main\assets\app\runtime.js
+C:\projekte\seiv\native-script-demo\platforms\android\app\src\main\assets\app\tns-java-classes.js
+C:\projekte\seiv\native-script-demo\platforms\android\app\src\main\assets\app\vendor.js

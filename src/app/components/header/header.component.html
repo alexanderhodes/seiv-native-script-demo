@@ -1,0 +1,5 @@
+<GridLayout columns="auto, *" row="auto" height="40" minHeight="40" marginTop="16">
+    <Label col="0" row="0" [text]="open ? '&#xf00d;' : '&#xf0c9;'" class="fa" fontSize="32" marginTop="6"
+           (tap)="toggleOpen()"></Label>
+    <Label col="1" row="0" [text]="title" fontSize="32" fontWeight="bold" marginLeft="16"></Label>
+</GridLayout>

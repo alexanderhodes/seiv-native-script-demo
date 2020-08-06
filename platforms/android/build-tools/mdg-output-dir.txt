@@ -1,0 +1,1 @@
+C:\projekte\seiv\native-script-demo\platforms\android\app/src/main/assets/metadata
