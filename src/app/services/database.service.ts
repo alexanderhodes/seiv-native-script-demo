@@ -30,6 +30,10 @@ export class DatabaseService {
         })
     }
 
+    /**
+     * insert todo into database by executing sql statement
+     * @param toDo
+     */
     insertToDo(toDo: IToDo): Observable<boolean> {
         const subject$ = new ReplaySubject<boolean>();
 
@@ -46,6 +50,9 @@ export class DatabaseService {
         return subject$.asObservable();
     }
 
+    /**
+     * read all todos that are currently stored in the database
+     */
     getAllToDos(): Observable<IToDo[]> {
         const subject$ = new ReplaySubject<IToDo[]>();
 
@@ -62,6 +69,9 @@ export class DatabaseService {
         return subject$.asObservable();
     }
 
+    /**
+     * delete all todos which where stored in the database
+     */
     deleteAllToDos(): Observable<boolean> {
         const subject$ = new ReplaySubject<boolean>();
 
@@ -78,6 +88,10 @@ export class DatabaseService {
         return subject$.asObservable();
     }
 
+    /**
+     * update todo by executing update statement in database
+     * @param toDo
+     */
     updateToDo(toDo: IToDo): Observable<boolean> {
         const subject$ = new ReplaySubject<boolean>();
 

@@ -13,10 +13,19 @@ export class SecureStorageService {
         this.secureStorage = new SecureStorage();
     }
 
+    /**
+     * get value for key from secure storage
+     * @param key
+     */
     getValue(key: string): any {
         return this.secureStorage.getSync({ key: key });
     }
 
+    /**
+     * storing value for key in secure storage
+     * @param key
+     * @param value
+     */
     setValue(key: string, value: string): void {
         this.secureStorage.set({ key: key, value: value })
             .then(() => {

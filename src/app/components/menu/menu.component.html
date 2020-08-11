@@ -3,4 +3,6 @@
     <TextField [(ngModel)]="name" hint="Name" returnKeyType="done"></TextField>
     <Button text="save name" (tap)="saveName()"></Button>
     <Button text="delete ToDos" (tap)="deleteToDos()"></Button>
+    <TextField [(ngModel)]="email" hint="E-mail" keyboardType="email" returnKeyType="done"></TextField>
+    <Button text="send mail" (tap)="sendMail()"></Button>
 </StackLayout>

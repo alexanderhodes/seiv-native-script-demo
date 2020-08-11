@@ -22,6 +22,7 @@
     "@angular/router": "~8.2.0",
     "@nativescript/theme": "~2.3.3",
     "nativescript-angular": "~8.21.0",
+    "nativescript-email": "^1.6.0",
     "nativescript-secure-storage": "^2.6.0",
     "nativescript-sqlite": "^2.6.3",
     "nativescript-toasty": "^3.0.0-alpha.2",
